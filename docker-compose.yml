@@ -5,7 +5,7 @@ services:
     build: .
     container_name: ollama-cpu
     ports:
-      - "11434:11434"
+      - "11435:11434"  # 👈 左側を「11435」に変更して衝突を回避！
     volumes:
       - ollama_cpu_storage:/root/.ollama
     restart: unless-stopped
